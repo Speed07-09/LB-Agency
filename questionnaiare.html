@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Meta Description for SEO -->
+    <meta name="description" content="POBB is a leading ROAS agency, specializing in return on ad spend optimization for e-commerce, health & wellness, Real Estate Agencies and travel businesses. We maximize your ad performance with advanced strategies.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Top ROAS Agency | Boost Your Return on Ad Spend with POBB">
+    <title>POBB-Agency | Pre questionnaire</title>
+    <link rel="icon" href="POBB__3_-removebg-preview (1) (1).ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- Loader Section -->
+    <div id="loader">
+        <div class="spinner">
+            <i class="currency-symbol">$</i>
+            <!-- You can replace with any symbol you like -->
+        </div>
+    </div>
+    <!-- Navigation Bar -->
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="#home">
+                <img src="2-removebg-preview.png" alt="POBB Logo">
+            </a>
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item" href="index.html">Home</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Pre-consultation-section -->
+    <section id="pre-consultation" class="pre-consultation-section">
+        <div class="container">
+            <h2>Pre-Consultation Questionnaire</h2>
+            <p>Thank you for considering our services! Please take a moment to fill out the questionnaire below, Your responses will help us tailor the consultation to your specific needs. Then you can schedule your consultation.</p>
+            <form action="https://formspree.io/f/xqazyrea" method="POST" class="consultation-form">
+                <!-- Question 1: Business Name -->
+                <label for="business-name">What is your business name?</label>
+                <input type="text" id="business-name" name="business-name" required>
+
+                <!-- Question 2: Business Industry -->
+                <label for="industry">What industry is your business in?</label>
+                <input type="text" id="industry" name="industry" required>
+
+                <!-- Question 3: What are your main goals? -->
+                <label for="goals">What are your main business goals right now?</label>
+                <textarea id="goals" name="goals" rows="4" required></textarea>
+
+                <!-- Question 4: What is your preferred communication method? -->
+                <label for="marketing-channels">What is your preferred communication method (email, phone calls, video calls)?</label>
+                <input type="text" id="marketing-channels" name="marketing-channels" required>
+
+                <!-- Question 5: What challenges are you currently facing in your business when it comes to marketing and advertising? -->
+                <label for="goals">What challenges are you currently facing in your business when it comes to marketing and advertising?</label>
+                <textarea id="goals" name="goals" rows="4" required></textarea>
+
+                <!-- Question 6: Current Marketing Channels -->
+                <label for="marketing-channels">Which marketing type are you currently using?</label>
+                <input type="text" id="marketing-channels" name="marketing-channels" required>
+
+                <!-- Question 7: Monthly Ad Spend -->
+                <label for="ad-spend">What is your current monthly ad or marketing spend?</label>
+                <input type="text" id="ad-spend" name="ad-spend" required>
+
+                <!-- Question 8: Expectations from Consultation -->
+                <label for="expectations">What do you hope to achieve from this consultation?</label>
+                <textarea id="expectations" name="expectations" rows="4" required></textarea>
+
+                <!-- Question 9: How long have you been in business? -->
+                <label for="expectations">How long have you been in business?</label>
+                <textarea id="expectations" name="expectations" rows="4" required></textarea>
+
+                <!-- Question 10: Who is involved in the decision-making process for your marketing strategy and budget? -->
+                <label for="expectations">Who is involved in the decision-making process for your marketing strategy and budget?</label>
+                <textarea id="expectations" name="expectations" rows="4" required></textarea>
+
+                <!-- Submit Button -->
+                <a href="https://calendly.com/pobb-agency">
+                    <button type="submit" class="button is-primary">Submit my questionnaire</button>
+                </a>
+
+                <h3>After submitting your questionnaire, comeback and Schedule your Consultation</h3>
+
+                <a href="https://calendly.com/pobb-agency" class="button is-primary">Schedule my consultation call</a>
+
+            </form>
+
+
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 POBB - All Rights Reserved</p>
+        <div class="footer-links ">
+            <a href="#contact ">Contact Us</a>
+        </div>
+    </footer>
+
+    <script>
+        // Navbar burger toggle for mobile
+        document.addEventListener('DOMContentLoaded', () => {
+            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+            if ($navbarBurgers.length > 0) {
+                $navbarBurgers.forEach(el => {
+                    el.addEventListener('click', () => {
+                        const target = el.dataset.target;
+                        const $target = document.getElementById(target);
+
+                        el.classList.toggle('is-active');
+                        $target.classList.toggle('is-active');
+                    });
+                });
+            }
+        });
+    </script>
+    <script>
+        // Ensure the DOM is fully loaded before hiding the loader
+        window.addEventListener('load', function() {
+            // Hide the loader
+            var loader = document.getElementById('loader');
+            loader.style.display = 'none';
+
+            // Show the main content
+            var content = document.getElementById('main-content');
+            content.style.display = 'block';
+        });
+
+        // Function to handle fade-in effect on scroll
+        const fadeInElements = document.querySelectorAll('.fade-in');
+
+        const handleScroll = () => {
+            fadeInElements.forEach((el) => {
+                const rect = el.getBoundingClientRect();
+                if (rect.top < window.innerHeight && rect.bottom > 0) {
+                    el.classList.add('visible');
+                }
+            });
+        };
+
+        // Attach scroll event listener
+        window.addEventListener('scroll', handleScroll);
+
+        // Trigger on load to handle elements already in view
+        handleScroll();
+    </script>
+</body>
+
+</html>
