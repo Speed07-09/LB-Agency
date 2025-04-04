@@ -3,13 +3,10 @@
 body {
     font-family: "Poppins", sans-serif;
     background-color: black;
-    /* Black background */
-    color: gold;
-    /* Gold text */
+    color: #D4AF37;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    /* Prevent horizontal scrolling */
 }
 
 
@@ -20,7 +17,6 @@ body {
     width: 100%;
     height: 100%;
     background-color: black;
-    /* Black background */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -30,10 +26,8 @@ body {
 .spinner {
     width: 100px;
     height: 100px;
-    border: 10px solid rgba(255, 215, 0, 0.2);
-    /* Gold border */
-    border-top: 10px solid gold;
-    /* Gold spinner */
+    border: 10px solid rgba(212, 175, 55, 0.2);
+    border-top: 10px solid #D4AF37;
     border-radius: 50%;
     animation: spin 1.5s linear infinite;
     display: flex;
@@ -45,13 +39,9 @@ body {
 .currency-symbol {
     font-size: 36px;
     font-weight: bold;
-    color: gold;
-    /* Gold symbol */
+    color: #D4AF37;
     position: absolute;
 }
-
-
-/* Spinner animation */
 
 @keyframes spin {
     0% {
@@ -62,9 +52,6 @@ body {
     }
 }
 
-
-/* Main content hidden initially */
-
 #main-content {
     display: none;
 }
@@ -72,17 +59,9 @@ body {
 
 /* Navigation bar */
 
-
-/* Navigation bar */
-
-
-/* Navigation bar */
-
 .navbar {
     background-color: black;
-    /* Black navbar */
-    color: gold;
-    /* Gold text */
+    color: #D4AF37;
     padding: 1rem;
     display: flex;
     justify-content: space-between;
@@ -92,26 +71,13 @@ body {
     z-index: 1000;
 }
 
-.navbar-brand {
-    display: flex;
-    align-items: center;
-}
-
 .navbar-brand img {
     max-height: 50px;
-    /* Adjust logo size */
     width: auto;
-    /* Maintain aspect ratio */
-}
-
-.navbar-menu {
-    display: flex;
-    align-items: center;
 }
 
 .navbar-menu a {
-    color: gold;
-    /* Gold text */
+    color: #D4AF37;
     text-decoration: none;
     font-size: 1rem;
     font-weight: 500;
@@ -120,34 +86,29 @@ body {
 }
 
 .navbar-menu a:hover {
-    color: #ffd700;
-    /* Lighter gold on hover */
+    color: #d4b857;
     background: transparent;
 }
 
-
-}
 .navbar-start {
     display: flex;
     gap: 1.5rem;
-    /* Space between navbar items */
 }
+
 .navbar-item {
-    color: gold;
-    /* Gold text */
-    
+    color: #D4AF37;
     text-decoration: none;
     font-size: 1rem;
     font-weight: 500;
     position: relative;
     transition: color 0.3s ease;
 }
+
 .navbar-item:hover {
-    color: #ffd700;
-    /* Lighter gold on hover */
-    
+    color: #d4b857;
     background: transparent;
 }
+
 .navbar-item::after {
     content: '';
     position: absolute;
@@ -155,70 +116,34 @@ body {
     left: 0;
     width: 0;
     height: 2px;
-    background-color: gold;
-    /* Gold underline */
-    
+    background-color: #D4AF37;
     transition: width 0.3s ease;
 }
+
 .navbar-item:hover::after {
     width: 100%;
-    /* Animate underline on hover */
 }
+
 .navbar-burger {
-    color: gold;
-    /* Gold burger icon */
-    
+    color: #D4AF37;
     background-color: transparent;
     border: none;
     cursor: pointer;
     display: none;
-    /* Hide by default */
-    
     margin-left: auto;
-    /* Move burger to the opposite side of the logo */
 }
 
-/* Responsive Navbar */
 @media (max-width: 768px) {
-    .navbar-burger {
-        display: block;
-        /* Show burger icon on smaller screens */
-    }
-    
     .navbar-menu {
-        display: none;
-        /* Hide menu by default on mobile */
-        flex-direction: column;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
         background-color: black;
-        /* Black background */
-        padding: 1rem;
-    }
-    
-    .navbar-menu.is-active {
-        display: flex;
-        /* Show menu when burger is clicked */
-    }
-    
-    .navbar-item {
-        margin: 0.5rem 0;
-        /* Spacing between items */
-        text-align: center;
-        /* Center-align items */
-    }
-    
-    .navbar-end {
-        margin-top: 1rem;
-        /* Spacing for the "Book a Call" button */
     }
 }
+
 
 /* Hero section */
+
 .hero {
-    background-image: url(WhatsApp\ Image\ 2025-02-17\ at\ 9.32.11\ PM.jpeg);
+    background-image: url(banner.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -227,99 +152,79 @@ body {
     margin-top: 0;
     margin-bottom: 20px;
     min-height: 100vh;
-    /* Full height */
-    
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 .hero .container h1 {
-    color: black;
-    /* Gold title */
-    
+    color: #D4AF37;
     font-size: 3rem;
     margin-bottom: 1rem;
 }
+
 .hero .container p {
-    color: black;
-    /* Gold text */
-    
+    color: #D4AF37;
     font-size: 1.25rem;
     margin-bottom: 2rem;
 }
+
 .hero .container a {
     background-color: black;
-    /* Gold button */
-    
-    color: gold;
-    /* Black text */
-    
+    color: #D4AF37;
     border-radius: 30px;
-    /* Rounded button */
-    
     padding: 0.75rem 2rem;
     font-size: 1rem;
     text-decoration: none;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
+
 .hero .container a:hover {
-    background-color: gold;
-    /* Black hover background */
-    
+    background-color: #D4AF37;
     color: black;
-    /* Gold hover text */
 }
+
 .button.is-primary {
-    background-color: gold;
-    /* Gold button */
-    
+    background-color: #D4AF37;
     color: black;
-    /* Black text */
-    
     border: none;
     border-radius: 30px;
-    /* Rounded button */
-    
     transition-delay: 0.2s;
     transition-duration: 0.2s;
     cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
     font-size: 20px;
 }
+
 .button.is-primary:hover {
     background-color: black;
-    /* Black hover background */
-    
-    color: gold;
-    /* Gold hover text */
+    color: #D4AF37;
 }
 
-/* Responsive Hero Section */
 @media (max-width: 768px) {
     .hero {
         padding: 3rem 1rem;
     }
-    
     .hero .container h1 {
         font-size: 2rem;
     }
-    
     .hero .container p {
         font-size: 1rem;
     }
-    
     .hero .container a {
         font-size: 0.9rem;
         padding: 0.5rem 1.5rem;
     }
 }
 
+
 /* About section */
+
 .about-section {
     padding: 4rem 1.5rem;
     background-color: black;
-    /* Black background */
 }
+
 .about-content {
     display: flex;
     flex-wrap: wrap;
@@ -327,75 +232,73 @@ body {
     align-items: center;
     gap: 2rem;
 }
+
 .about-text {
     flex: 1;
     min-width: 300px;
 }
+
 .about-title {
     font-size: 1.5rem;
     font-weight: bold;
-    color: gold;
-    /* Gold title */
+    color: #D4AF37;
 }
+
 .abouth3 {
     font-size: 2.5rem;
     font-weight: bold;
-    color: gold;
-    /* Gold text */
-    
-    background: linear-gradient(90deg, gold, #ffd700);
-    /* Gold gradient */
-    
+    color: #D4AF37;
+    background: linear-gradient(90deg, #D4AF37, #d4b857);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
 .about-description {
     font-size: 1.125rem;
-    color: gold;
-    /* Gold text */
-    
+    color: #D4AF37;
     line-height: 1.75;
     margin-top: 1rem;
     margin-bottom: 1.5rem;
 }
+
 .image-wrapper {
     flex: 1;
     max-width: 700px;
     margin: 0 auto;
 }
+
 .about-image {
     width: 100%;
     height: auto;
     border-radius: 20px;
 }
 
-/* Responsive About Section */
 @media (max-width: 768px) {
     .about-content {
         flex-direction: column;
         text-align: center;
     }
-    
-    .about-text {
-        text-align: center;
-    }
 }
 
+
 /* Case section */
+
 .casesection {
     background-color: black;
     padding: 20px;
     margin-bottom: 30px;
     margin-top: 20px;
 }
+
 .casesection .container {
     box-shadow: rgba(10, 10, 10, 0.2) 0px 8px 24px;
-    border: 1px solid rgb(190, 185, 152);
+    border: 1px solid #D4AF37;
     border-radius: 20px;
     padding: 2rem;
 }
+
 .black-box {
-    background-color: gold;
+    background-color: #D4AF37;
     color: black;
     padding: 20px;
     text-align: left;
@@ -405,53 +308,48 @@ body {
     max-width: 300px;
     margin: 0 auto;
 }
+
 .black-box .box-text {
     font-size: 1.5rem;
     line-height: 1.5;
     font-weight: bold;
     color: black;
 }
+
 .black-box .box-text strong {
-    color: goldenrod;
+    color: #D4AF37;
 }
 
-/* Responsive Case Section */
 @media (max-width: 768px) {
     .casesection .container {
         padding: 1rem;
     }
-    
-    .black-box {
-        max-width: 100%;
-    }
 }
 
+
 /* Services section */
+
 .services-section {
     padding: 60px 20px;
     background-color: black;
-    /* Black background */
-    
     text-align: center;
 }
+
 .services-section h2 {
     font-size: 2.5rem;
     margin-bottom: 2px;
-    color: gold;
-    /* Gold title */
-    
+    color: #D4AF37;
     font-weight: bold;
-    background: linear-gradient(90deg, gold, #ffd700);
-    /* Gold gradient */
-    
+    background: linear-gradient(90deg, #D4AF37, #d4b857);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
 .services-section p {
     margin-bottom: 20px;
-    color: gold;
-    /* Gold text */
+    color: #D4AF37;
 }
+
 .services-container {
     display: flex;
     flex-wrap: wrap;
@@ -459,52 +357,34 @@ body {
     gap: 20px;
 }
 
-/* Service Card Styles */
 .service-card {
     background-color: black;
-    /* Black card background */
-    
     border-radius: 20px;
-    /* Rounded card */
-    
     padding: 20px;
     width: 300px;
-    border: 1px solid gold;
-    box-shadow: rgba(255, 215, 0, 0.1) 0px 10px 15px -3px, rgba(255, 215, 0, 0.05) 0px 4px 6px -2px;
-    /* Gold shadow */
-    
+    border: 1px solid #D4AF37;
+    box-shadow: rgba(212, 175, 55, 0.1) 0px 10px 15px -3px, rgba(212, 175, 55, 0.05) 0px 4px 6px -2px;
     text-align: center;
 }
+
 .service-icon {
     font-size: 3rem;
-    /* Larger icons */
-    
-    color: gold;
-    /* Gold color for icons */
-    
+    color: #D4AF37;
     margin-bottom: 1rem;
-    /* Spacing below the icon */
-}
-.service-card h3 {
-    font-size: 1.5rem;
-    /* Title size */
-    
-    margin-bottom: 1rem;
-    color: gold;
-    /* Gold title */
-}
-.service-card p {
-    font-size: 0.9rem;
-    /* Smaller paragraph text */
-    
-    color: gold;
-    /* Gold text */
-    
-    line-height: 1.5;
-    /* Improved readability */
 }
 
-/* Responsive Services Section */
+.service-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #D4AF37;
+}
+
+.service-card p {
+    font-size: 0.9rem;
+    color: #D4AF37;
+    line-height: 1.5;
+}
+
 @media (max-width: 768px) {
     .services-container {
         flex-direction: column;
@@ -512,88 +392,162 @@ body {
     }
 }
 
+
 /* FAQs section */
+
 #faqs .box {
     background-color: black;
-    /* Black background */
-    
-    color: gold;
-    /* Gold text */
-    
-    border: 1px solid gold;
-    /* Gold border */
-    
+    color: #D4AF37;
+    border: 1px solid #D4AF37;
     border-radius: 20px;
-    /* Rounded card */
-    
     padding: 2rem;
 }
+
 #faqs .subtitle-black {
-    color: gold;
-    /* Gold title */
+    color: #D4AF37;
 }
 
+
 /* Contact section */
+
 #contact {
     background-color: black;
-    /* Black background */
-    
     padding: 4rem 1.5rem;
 }
+
 #contact .title {
-    color: gold;
-    /* Gold title */
+    color: #D4AF37;
 }
+
 #contact .label {
-    color: gold;
-    /* Gold label */
+    color: #D4AF37;
 }
+
 #contact .input,
 #contact .textarea {
     background-color: black;
-    /* Black input background */
-    
-    color: gold;
-    /* Gold text */
-    
-    border: 1px solid gold;
-    /* Gold border */
-    
+    color: #D4AF37;
+    border: 1px solid #D4AF37;
     border-radius: 10px;
-    /* Rounded input */
-}
-#contact .button.is-primary {
-    background-color: gold;
-    /* Gold button */
-    
-    color: black;
-    /* Black text */
-    
-    border-radius: 30px;
-    /* Rounded button */
-}
-#contact .button.is-primary:hover {
-    background-color: black;
-    /* Black hover background */
-    
-    color: gold;
-    /* Gold hover text */
 }
 
+#contact .button.is-primary {
+    background-color: #D4AF37;
+    color: black;
+    border-radius: 30px;
+}
+
+#contact .button.is-primary:hover {
+    background-color: black;
+    color: #D4AF37;
+}
+
+
 /* Footer */
+
 footer {
     background-color: black;
-    /* Black background */
-    
-    color: gold;
-    /* Gold text */
-    
+    color: #D4AF37;
     padding: 2rem 1.5rem;
     text-align: center;
     border-radius: 20px;
-    /* Rounded footer */
 }
+
 .footer-links a {
-    color: gold;
-    /* Gold links */
+    color: #D4AF37;
+}
+
+
+/* pricing */
+
+.pricing-section {
+    padding: 4rem 1.5rem;
+    background-color: black;
+    /* Brand background */
+}
+
+.pricing-table {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.pricing-plan {
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Semi-transparent black */
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    /* Brand gold with opacity */
+    border-radius: 10px;
+    padding: 2rem;
+    margin: 1rem;
+    width: 300px;
+    transition: all 0.3s ease;
+    /* Smooth transition for all properties */
+    text-align: center;
+    color: #D4AF37;
+    /* Brand gold text */
+}
+
+.pricing-plan:hover {
+    transform: translateY(-10px);
+    border-color: #D4AF37;
+    /* Solid brand gold on hover */
+    box-shadow: 0 10px 30px rgba(212, 175, 55, 0.1);
+    /* Gold shadow */
+}
+
+.plan-title {
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #D4AF37;
+    /* Brand gold */
+}
+
+.plan-price {
+    font-size: 2rem;
+    color: #D4AF37;
+    /* Brand gold */
+    margin: 1rem 0;
+}
+
+.plan-features {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1rem;
+}
+
+.plan-features li {
+    margin-bottom: 0.75rem;
+    color: #D4AF37;
+    /* Brand gold */
+}
+
+.plan-button {
+    background-color: #D4AF37;
+    /* Brand gold */
+    color: black;
+    /* Black text */
+    border-radius: 30px;
+    padding: 0.75rem 2rem;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.plan-button:hover {
+    background-color: black;
+    color: #D4AF37;
+    /* Brand gold */
+    border-color: #D4AF37;
+    /* Gold border */
+}
+
+
+/* Responsive Pricing Section */
+
+@media (max-width: 768px) {
+    .pricing-plan {
+        width: 100%;
+        margin: 1rem 0;
+    }
 }
